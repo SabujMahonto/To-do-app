@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 body {
-  background: #212121;
+  background: rgb(54, 86, 146);
 }
 .container {
   text-align: center;
-  color: aliceblue;
+  /* color: aliceblue; */
+}
+.container h1 {
+  color: lightgoldenrodyellow;
+  font-size: 40px;
+  margin: 10px 0;
 }
 
 ul#task_list {
@@ -17,11 +22,11 @@ ul#task_list {
 }
 
 .task-creation input {
-  padding: 8px;
+  padding: 10px;
 }
 
 .task-creation button {
-  padding: 8px;
+  padding: 10px;
 }
 .display_area ul .item {
   display: flex;
@@ -30,9 +35,12 @@ ul#task_list {
 }
 .display_area ul .item li {
   flex: 1;
-  background: orange;
+  background: tomato;
   list-style: none;
   padding: 10px;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
 }
 
 .display_area ul .item button {
