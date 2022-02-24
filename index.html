@@ -7,25 +7,30 @@
     <title>My to do apps</title>
     <!--* font-awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+     <!--* custome css file link  -->
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>My To Do App</h2>
+        <h1>My To Do App</h1>
+        <!-- task creation area  -->
         <div class="task-creation">
             <input type="text" id="" placeholder="Create a New Task">
             <button>Add Task</button>
         </div>
+        
+            <!-- task display area  -->
         <div class="display_area">
-            <div id="task_list">
+            <ul id="task_list">
                 <div class="item">
                     <li>Item-1</li>
-                    <button class=""><i class="fas fa-pen"></i></button>
-                    <button class=""><i class="fas fa-check"></i></button>
-                    <button class=""><i class="fas fa-trash-can"></i></button>
+                    <button class="edit"><i class="fas fa-pen"></i></button>
+                    <button class="complited"><i class="fas fa-check"></i></button>
+                    <button class="delete"><i class="fas fa-trash-can"></i></button>
                 </div>
-            </div>
+            </ul>
         </div>
+
     </div>
 </body>
 </html>

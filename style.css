@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #212121;
+}
+.container {
+  text-align: center;
+  color: aliceblue;
+}
+
+ul#task_list {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.task-creation input {
+  padding: 8px;
+}
+
+.task-creation button {
+  padding: 8px;
+}
+.display_area ul .item {
+  display: flex;
+  justify-content: flex-end;
+}
+.display_area ul .item li {
+  flex: 1;
+  background: orange;
+  list-style: none;
+  padding: 10px;
+}
+
+.display_area ul .item button {
+  height: 40px;
+  width: 40px;
+}
+.display_area .item button i {
+  font-size: 24px;
+}
