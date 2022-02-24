@@ -26,6 +26,7 @@ ul#task_list {
 .display_area ul .item {
   display: flex;
   justify-content: flex-end;
+  margin: 5px 0;
 }
 .display_area ul .item li {
   flex: 1;
@@ -40,4 +41,5 @@ ul#task_list {
 }
 .display_area .item button i {
   font-size: 24px;
+  pointer-events: none;
 }
