@@ -84,13 +84,11 @@ function editTaskName(event){
             const modifyName = e.target.value;
                 li.innerHTML = ''
                 li.innerText = modifyName;
-                event.target.style.display = 'inline' 
+                event.target.style.display = '' 
         }
       
     })
     li.appendChild(input)
     event.target.style.display = 'none'
-
-
 
 }
