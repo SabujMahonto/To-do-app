@@ -43,3 +43,7 @@ ul#task_list {
   font-size: 24px;
   pointer-events: none;
 }
+.complied_task {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

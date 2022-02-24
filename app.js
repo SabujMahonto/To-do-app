@@ -1,3 +1,6 @@
+// select all item 
+// add to click event to add btn 
+// get the input value 
 
 function getById(id){
     return document.getElementById(id);
@@ -42,12 +45,12 @@ taskList.addEventListener('click',function(event){
     }
     else if(event.target.className == 'complied'){
 
-        console.log(event.target)
+        CompleteTask(event)
 
     }
     else if(event.target.className == 'edit'){
 
-        console.log(event.target)
+        editTaskName(event)
 
     }
 
@@ -59,7 +62,35 @@ function deleteItem(event){
     event.target.parentElement.remove()
 }
 
+// function for completed task  
+
+function CompleteTask(event){
+   const li = event.target.parentElement.firstElementChild;
+  li.classList.toggle('complied_task')
+}
+//  function for edit task name 
+
+function editTaskName(event){
+   const li = event.target.parentElement.firstElementChild 
+    const previousText = li.innerHTML;
+    li.innerHTML = ''
+
+    const input = document.createElement('input');
+    input.type = 'text'
+    input.value = previousText;
+    input.addEventListener('keypress', function(e){
+
+        if(e.key == "Enter"){
+            const modifyName = e.target.value;
+                li.innerHTML = ''
+                li.innerText = modifyName;
+                event.target.style.display = 'inline' 
+        }
+      
+    })
+    li.appendChild(input)
+    event.target.style.display = 'none'
 
 
-// add to click event to add btn 
-// get the input value 
+
+}
