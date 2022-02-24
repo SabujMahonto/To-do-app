@@ -37,7 +37,7 @@ taskList.addEventListener('click',function(event){
 
     if(event.target.className == 'delete'){
 
-        console.log(event.target)
+        deleteItem(event)
 
     }
     else if(event.target.className == 'complied'){
@@ -52,6 +52,12 @@ taskList.addEventListener('click',function(event){
     }
 
 })
+
+// function for delete item 
+
+function deleteItem(event){
+    event.target.parentElement.remove()
+}
 
 
 
